@@ -42,8 +42,8 @@ h1,
 h2,
 h3,
 h4,
-p,
-a {
+p
+ {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -294,7 +294,7 @@ address {
   text-align: center;
 }
 
-.picture {
+.team-picture {
   display: flex;
   flex-wrap: wrap;
 }
