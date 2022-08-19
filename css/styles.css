@@ -301,6 +301,8 @@ address {
 
 .content-wrapper {
   padding: var(--min-gap);
+  padding-left: 32px;
+  padding-right: 32px;
   }
 .team-pic {
   flex-basis: calc((100% - 90px) / 4);
@@ -323,8 +325,38 @@ address {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 16px;
 }
 
+.social-link{
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link{
+  fill: #AFB1B8;
+}
+
+.social-link:hover, 
+.social-link:focus {
+  background-color: #2196f3;
+} 
+
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
+  fill: var(--white-color);
+}
+
+.social{
+  display: flex;
+  justify-content:space-between;
+}
 
 /* footer */
 .footer {
