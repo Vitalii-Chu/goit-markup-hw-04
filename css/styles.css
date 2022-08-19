@@ -104,7 +104,7 @@ address {
 .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid var(--header-line);
+  border-bottom: 1px solid var(--header-line);
 }
 
 .header-container {
@@ -176,6 +176,13 @@ address {
   margin-right: var(--middle-gap);
 }
 
+.nav-img{
+  margin-right: 10px;
+  text-align: center;
+}
+
+
+
 /* hero */
 .hero-section {
   background-color: var(--header-footer-color);
@@ -186,8 +193,12 @@ address {
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)), 
      url("../images/hero.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-tittle {
@@ -268,6 +279,20 @@ address {
   margin-left: var(--min-gap);
 }
 
+.general-img{
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-second-color);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+
+
+/* work */
 .images-work {
   width: calc((100% - 3 * var(--min-gap)) / 3);
 }
@@ -357,6 +382,49 @@ address {
   display: flex;
   justify-content:space-between;
 }
+
+/* our client */
+.client{
+  padding-top: 94px;
+  padding-bottom: 88px;
+}
+
+.client-list{
+  display: flex;
+  justify-content:space-between;
+}
+
+
+.company-link{
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+
+}
+
+.company-link:hover .client-icon,
+.company-link:focus .client-icon{
+  fill: var(--accent-color);
+
+}
+
+
+
+.client-icon{
+fill: #AFB1B8;
+}
+
+
+.company-link:hover,
+.company-link:focus{
+  border: 1px solid var(--accent-color);
+}
+
+
 
 /* footer */
 .footer {
