@@ -179,10 +179,13 @@ address {
 .nav-img{
   margin-right: 10px;
   text-align: center;
+  fill: var(--primary-text-color);
 }
 
-
-
+.link-auth:hover .nav-img,
+.link-auth:focus .nav-img{
+  fill: var(--accent-color);
+}
 /* hero */
 .hero-section {
   background-color: var(--header-footer-color);
@@ -444,6 +447,19 @@ fill: #AFB1B8;
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+
+.tittle-footer{
+  font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--white-color);
+}
+
+
+.footer-social{
+  display: flex;
 }
 /* ==========сторінка портфоліо============= */
 
