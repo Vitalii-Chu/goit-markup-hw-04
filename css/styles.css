@@ -201,7 +201,7 @@ address {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   max-width: 1600px;
@@ -430,6 +430,7 @@ address {
 .footer {
   background-color: var(--header-footer-color);
   display: flex;
+  align-items: baseline;
 }
 
 .footer-container {
@@ -488,8 +489,8 @@ address {
 }
 
 .link-position {
-  margin-left: 156px;
-  margin-top: 12px;
+  margin-left: 70px;
+
 }
 /* ==========сторінка портфоліо============= */
 
@@ -546,6 +547,7 @@ address {
 
 .nav-icon {
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
 .portfolio-auth {
@@ -629,14 +631,15 @@ address {
 .link-pic {
   text-decoration: none;
   color: var(--primary-text-color);
+  display: block;
 }
 .portfolio-wrapper {
   padding: 20px 24px;
   outline: 1px solid #eeeeee;
 }
 
-.portfolio-pic:hover,
-.portfolio-pic:focus {
+ .link-pic:hover,
+ .link-pic:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
