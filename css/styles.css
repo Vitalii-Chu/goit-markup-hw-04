@@ -486,6 +486,7 @@ address {
 
 .footer-social {
   display: flex;
+  margin-top: 20px;
 }
 
 .link-position {
@@ -655,3 +656,5 @@ address {
   line-height: 24px;
   color: var(--white-color);
 }
+
+
